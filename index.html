@@ -22,8 +22,7 @@
         .wrapper {
             width: 100%;
             table-layout: fixed;
-            background-color: #cccccc;
-            padding: 60px;
+            padding: 0 15px 60px 15px;
         }
         .main {
             background-color: #fff;
@@ -32,31 +31,223 @@
             max-width: 600px;
             border-spacing: 0;
             font-family: 'Source Sans Pro', sans-serif;
-            color: #3f8c84; 
+        }
+        .logo-column {
+            background-color: #fff;
+        }
+        .banner {
+            position: relative;
+            text-align: center;
+            
+        }
+        .banner-h3 {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Source Sans Pro', sans-serif;
+            color: #fff;
+            font-weight: bolder;
+        }
+        .banner-h5 {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Source Sans Pro', sans-serif;
+            color: #fff;
+            font-weight: bolder;
+        }
+        .three-columns {
+            text-align: center;
+            font-size: 0;
+            padding: 15px 0 25px 0;
+        }
+        .three-columns .column {
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+            max-width: 200px;
+            text-align: center;
+        }
+        .three-columns .padding {
+            padding: 15px;
+        }
+        .three-columns .content {
+            font-size: 15px;
+            line-height: 20px;
+            padding: 0 5px;
+        }
+        .two-columns.last {
+            padding: 25px 0;
+        }
+        .two-columns .padding{
+            padding: 20px;
+        }
+        .two-columns .content{
+            font-size: 15px;
+            line-height: 20px;
+            text-align: left;
+        }
+        .button{
+            background-color: #fff;
+            color: #3f8c84;
+            text-decoration: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
     <center class="wrapper">
-        <table width="100%">
+        <table class="main" width="100%">
 
     <!-- TOP BORDER -->
             <tr>
-                <td height="8" style="background-color: #3f8c84;"></td>
+                <td height="8" style="background-color: #3f8c84"></td>
             </tr>
 
     <!-- LOGO SECTION -->
-            
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td class="logo-column" align="center">
+                                <table>
+                                    <tr>
+                                        <td height="100%" style="background-color: #fff">
+                                            <a href="#"><img src="images/ng-email-logo.png" alt="" title="Ng Dry Cleaners" height="75px" ></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
 
     <!-- BANNER IMAGE -->
 
+            <tr>
+                <td class="banner">
+                    <a href="#"><img src="images/ColorfulHomes.jpg" alt="" width="600px" style="max-width: 100%;"></a>
+                        <h2 class="banner-h3">Keeping Curaçao's wardrobe clean</h2>
+                        <h5 class="banner-h5">Since 1962 we've worked hard on keeping your wardrobe clean</h5>
+                    </td>
+                </td>
+            </tr>
 
     <!-- THREE COLUMN SECTION -->
-
+            <tr>
+                <td>
+                    <table width="100%">
+                       <tr>
+                           <td class="three-columns">
+                               <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <a href="#"><img src="images/001-dry-cleaning.png" alt="" width="130px" style="max-width: 130px"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p style="font-weight: bold; font-size: 20px; color: #3f8c84" >Dry Cleaning</p>
+                                                        <p>With our Dry Cleaning Services, your clothes will be Fresh and Neatly Pressed before pick up</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                               </table>
+                               <table class="column">
+                                <tr>
+                                    <td class="padding">
+                                        <table class="content">
+                                            <tr>
+                                                <td>
+                                                    <a href="#"><img src="images/003-laundry.png" alt="" width="130px" style="max-width: 130px"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p style="font-weight: bold; font-size: 20px; color: #3f8c84" >Dry Cleaning</p>
+                                                    <p>With our Dry Cleaning Services, your clothes will be Fresh and Neatly Pressed before pick up</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                           </table>
+                           <table class="column">
+                            <tr>
+                                <td class="padding">
+                                    <table class="content">
+                                        <tr>
+                                            <td>
+                                                <a href="#"><img src="images/building.png" alt="" width="130px" style="max-width: 130px"></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p style="font-weight: bold; font-size: 20px; color: #3f8c84" >Dry Cleaning</p>
+                                                <p>With our Dry Cleaning Services, your clothes will be Fresh and Neatly Pressed before pick up</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                       </table>
+                           </td>
+                       </tr>
+                    </table>
+                </td>
+            </tr>
 
     <!-- TWO COLUMN SECTION -->
+           <tr>
+               <td style="background-color: #3f8c84; color: #fff;">
+                   <table width="100%">
+                        <tr>
+                            <td class="two-columns last">
 
+                                <table class="column" align="left">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <a href=""><img src="images/pexels-pavel-danilyuk-6461522.jpg" alt="" width="260px" style="max-width: 260px;"></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column" align="right" >
+                                    <tr>
+                                        <td class="padding" width="240px>
+                                            <table class="content">
+                                                <tr>
+                                                    <td ">
+                                                       <p style="font-weight: bold; font-size: 16px;">Alterations</p>
+                                                       <p>We also offer many alteration services such as: Button Fixes, Hems, Tapers, and many more.</p>
+                                                       <a href="#" class="button">More Information</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                   </table>
+               </td>
+           </tr>
 
     <!-- TITLE, TEXT & BUTTON -->
 
